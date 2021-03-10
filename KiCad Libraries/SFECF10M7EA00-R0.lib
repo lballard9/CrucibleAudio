@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model SFECF10M7EA00-R0
+#/410341/215308/2.48/6/4/Undefined or Miscellaneous
+DEF SFECF10M7EA00-R0 U 0 30 Y Y 1 F N
+F0 "U" 1150 300 50 H V L CNN
+F1 "SFECF10M7EA00-R0" 1150 200 50 H V L CNN
+F2 "SFECF10M7DF00R0" 1150 100 50 H I L CNN
+F3 "https://www.murata.com/en-us/api/pdfdownloadapi?cate=luCeramicFilters&partno=SFECF10M7EA00-R0" 1150 0 50 H I L CNN
+F4 "Filter 10.7MHz 330kHz Band SMD" 1150 -100 50 H I L CNN "Description"
+F5 "1" 1150 -200 50 H I L CNN "Height"
+F6 "Murata Electronics" 1150 -300 50 H I L CNN "Manufacturer_Name"
+F7 "SFECF10M7EA00-R0" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "81-SFECF10M7EA00-R0" 1150 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/SFECF10M7EA00-R0/?qs=JeeHtbZy5XxmaXoF7C%2FIAQ%3D%3D" 1150 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "SFECF10M7EA00-R0" 1150 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/sfecf10m7ea00-r0/murata-manufacturing" 1150 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X INPUT 1 0 0 200 R 50 50 0 0 P
+X GND_1 2 0 -100 200 R 50 50 0 0 P
+X NC_1 3 0 -200 200 R 50 50 0 0 P
+X NC_2 4 1300 -200 200 L 50 50 0 0 P
+X GND_2 5 1300 -100 200 L 50 50 0 0 P
+X OUTPUT 6 1300 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1100 100 1100 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MC74ACT86DG
+D ON SEMICONDUCTOR - MC74ACT86DG - XOR Gate, 74ACT86, 2 Input, 24 mA, 4.5 V to 5.5 V, SOIC-14
+K
+F http://www.onsemi.com/pub/Collateral/MC74AC86-D.PDF
+$ENDCMP
+#
+#End Doc Library
