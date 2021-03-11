@@ -1315,9 +1315,7 @@ F 3 "~" H 13975 1285 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13625 1225 13200 1225
-Wire Wire Line
-	13625 1425 13200 1425
+	13625 1225 13425 1225
 Text Label 13200 1225 0    50   ~ 0
 V+
 Text Label 13200 1425 0    50   ~ 0
@@ -1577,4 +1575,22 @@ F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%
 $EndComp
 Text Label 10350 850  0    50   ~ 0
 VCC
+$Comp
+L power:GND #PWR?
+U 1 1 604C2102
+P 13625 1425
+F 0 "#PWR?" H 13625 1175 50  0001 C CNN
+F 1 "GND" H 13630 1252 50  0000 C CNN
+F 2 "" H 13625 1425 50  0001 C CNN
+F 3 "" H 13625 1425 50  0001 C CNN
+	1    13625 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13425 1225 13425 1425
+Wire Wire Line
+	13200 1425 13425 1425
+Connection ~ 13425 1225
+Wire Wire Line
+	13425 1225 13200 1225
 $EndSCHEMATC

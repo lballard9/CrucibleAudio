@@ -1,0 +1,114 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.4 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                   Transient Analysis of Zeus Amplifier                   ***
+***                           3/11/2021 5:31:20 PM                           ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           10
+Output Start Time (tstart) 9.5
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2            -0.015f  3             0.013f 
+VEE           0.013f  VCC          -0.015f 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D13            D14
+Using model:        D1N4148        D1N4148
+
+Capacitance Terms:
+CAP                953.561f       953.561f
+
+Current Terms:
+ID               3.758E-024     3.758E-024
+
+Resistance Terms:
+REQ                3.109MEG       3.109MEG
+
+Voltage Terms:
+VD                   0.015f         0.013f
+
+Power DC Terms:
+PD               5.681E-041     5.009E-041
+PS                   0.000          0.000 
+
+DC Pin Currents:
+Id               3.758E-024     3.758E-024
+
+Condition:
+State                   OFF            OFF
+
+Device Variables:
+area                 1.000          1.000 
+ic                   0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:             RTEST1         RTEST2
+V                -1.541E-033         0.000 
+Power DC Terms:
+PD                2.374E-060         0.000 
+
+DC Pin Currents:
+Ir               -1.541E-027         0.000 
+
+Device Variables:
+tc1                   0.000          0.000 
+tc2                   0.000          0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C2             C3
+V                    -0.013f         0.015f
+Power DC Terms:
+PS                    0.000          0.000 
+
+DC Pin Currents:
+Ic                    0.000          0.000 
+
+Device Variables:
+ic                    0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1
+V                    0.000 
+Power DC Terms:
+PG                   0.000 
+
+DC Pin Currents:
+ISource          2.080E-028
+
+
