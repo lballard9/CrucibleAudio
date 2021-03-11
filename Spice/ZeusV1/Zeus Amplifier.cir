@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.4
 Key ID=Demo
-NLCnt=273
+NLCnt=278
 TXCnt=15
 
 [shapedef]
@@ -179,8 +179,8 @@ Pin="Minus",0,0,-14,-4
 Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
-Mask=6401
-Used=749
+Mask=6657
+Used=751
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -545,25 +545,6 @@ Pxs=240,360,296,360
 Name=Ground
 Px=240,432
 Rot=7
-
-[Comp]
-Name=Capacitor
-Px=224,360
-Rot=6
-
-[Attr]
-ON=-33,12,PART
-V=Cin
-Style=8192
-
-[Attr]
-ON=-40,26,CAPACITANCE
-V=20u
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
 
 [Wire]
 Pxs=224,360,240,360
@@ -2702,6 +2683,56 @@ V=40
 ON=29,45,PACKAGE
 V=TO-220AB
 
+[Comp]
+Name=Capacitor
+Px=224,312
+Rot=2
+
+[Attr]
+ON=-33,-26,PART
+V=C9
+Style=8192
+
+[Attr]
+ON=-40,-40,CAPACITANCE
+V=10u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=224,392
+Rot=2
+
+[Attr]
+ON=-33,-26,PART
+V=C10
+Style=8192
+
+[Attr]
+ON=-40,-40,CAPACITANCE
+V=10u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=176,312,176,360
+
+[Wire]
+Pxs=176,360,176,392
+
+[Wire]
+Pxs=224,360,224,392
+
+[Wire]
+Pxs=224,312,224,360
+
 [Grid Text]
 Text=".define Ltrace 2n"
 Px=1552,336
@@ -2837,7 +2868,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=1
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -3025,9 +3056,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=67,48
-Scale 3=1.3333333333333333
-Px=1340,420
+SB 3=0,176
+Scale 3=1
+Px=769,545
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000

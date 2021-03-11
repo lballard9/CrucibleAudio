@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ZeusAmp-rescue)(type Legacy)(uri ${KIPRJMOD}/ZeusAmp-rescue.lib)(options "")(descr ""))
+)
