@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.4
 Key ID=Demo
-NLCnt=278
+NLCnt=279
 TXCnt=15
 
 [shapedef]
@@ -157,7 +157,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=1214
+Used=1215
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -483,7 +483,7 @@ Pxs=672,32,704,32
 Pxs=536,32,536,40
 
 [Wire]
-Pxs=536,32,560,32
+Pxs=536,32,576,32
 
 [Comp]
 Name=Resistor
@@ -581,7 +581,7 @@ Style=256
 Pxs=144,360,144,376
 
 [Wire]
-Pxs=144,360,160,360
+Pxs=144,360,176,360
 
 [Comp]
 Name=Ground
@@ -1002,7 +1002,7 @@ Pxs=696,360,696,704
 Pxs=1232,472,1232,704
 
 [Wire]
-Pxs=1232,472,1384,472
+Pxs=1232,472,1448,472
 
 [Comp]
 Name=Voltage Source
@@ -1017,7 +1017,7 @@ Style=8192
 
 [Attr]
 ON=-192,-41,VALUE
-V=DC 0 AC 1 0 Sin 0 32 60 0 0 0
+V=DC 0 AC 1 0 Sin 0 16 60 0 0 0
 
 [Attr]
 ON=0,0,PACKAGE
@@ -1025,7 +1025,7 @@ V
 
 [Attr]
 ON=0,0,Saved_Sin
-V=DC 0 AC 1 0 Sin 0 32 60 0 0 0
+V=DC 0 AC 1 0 Sin 0 16 60 0 0 0
 Style=256
 
 [Comp]
@@ -1053,7 +1053,7 @@ Pxs=192,136,192,160
 Page=2
 
 [Wire]
-Pxs=192,136,256,136
+Pxs=192,136,224,136
 Page=2
 
 [Comp]
@@ -1074,14 +1074,6 @@ Style=8192
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=192,208,192,264
-Page=2
-
-[Wire]
-Pxs=192,264,256,264
-Page=2
 
 [Wire]
 Pxs=304,264,328,264
@@ -1144,17 +1136,11 @@ Rot=7
 Page=2
 
 [Wire]
-Pxs=160,360,176,360
-
-[Wire]
-Pxs=1384,472,1448,472
-
-[Wire]
 Pxs=328,264,336,264
 Page=2
 
 [Wire]
-Pxs=384,264,472,264
+Pxs=384,264,448,264
 Page=2
 
 [Comp]
@@ -1200,7 +1186,7 @@ Pxs=336,136,376,136
 Page=2
 
 [Wire]
-Pxs=424,136,464,136
+Pxs=424,136,456,136
 Page=2
 
 [Comp]
@@ -1249,9 +1235,6 @@ V=0.625
 [Attr]
 ON=-67,45,PACKAGE
 V=TO-92
-
-[Wire]
-Pxs=560,32,576,32
 
 [Comp]
 Name=NZT660
@@ -2733,6 +2716,32 @@ Pxs=224,360,224,392
 [Wire]
 Pxs=224,312,224,360
 
+[Wire]
+Pxs=456,136,464,136
+Page=2
+
+[Wire]
+Pxs=448,264,472,264
+Page=2
+
+[Comp]
+Name=Ground
+Px=192,208
+Rot=7
+Page=2
+
+[Wire]
+Pxs=224,136,224,264
+Page=2
+
+[Wire]
+Pxs=224,136,256,136
+Page=2
+
+[Wire]
+Pxs=224,264,256,264
+Page=2
+
 [Grid Text]
 Text=".define Ltrace 2n"
 Px=1552,336
@@ -3040,7 +3049,7 @@ Enable=True
 CurrentPage 0=0
 CurrentPage 1=0
 CurrentPage 2=0
-CurrentPage 3=0
+CurrentPage 3=2
 TabSize 0=425
 TabSize 1=425
 TabSize 2=425
@@ -3050,7 +3059,7 @@ TabSize 3=425
 Index=0
 Section=0
 Print=True
-Enable=True
+Enable=False
 Name=ZeusAmplifierV1
 PrinterScale=1
 Scale 0=1
@@ -3058,7 +3067,7 @@ Scale 1=1
 Scale 2=1
 SB 3=0,176
 Scale 3=1
-Px=769,545
+Px=280,709
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -3157,14 +3166,14 @@ Block Select Color=#51F998
 Index=2
 Section=0
 Print=True
-Enable=False
+Enable=True
 Name=PSU
 PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=134,534
+Px=197,189
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -3583,10 +3592,6 @@ ALIGNBOTTOM=Yes
 
 [APage]
 Analysis=Transient
-Name="MAIN"
-
-[APage]
-Analysis=Transient
 Name="2"
 
 [AC]
@@ -3852,7 +3857,7 @@ YRng=18,-12
 Options=LINEARX,LINEARY
 Range Grid X=0.1
 Range Grid Y=6
-Enable=Enable
+Enable=DontRun
 Line Color=#0000FF
 Text Color=#0000FF
 Rainbow=False
@@ -3878,7 +3883,7 @@ YRng=18,-12
 Options=LINEARX,LINEARY
 Range Grid X=0.1
 Range Grid Y=6
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -3901,10 +3906,10 @@ AliasID=4
 XExp=T
 YExp=v(VCC)
 XRng=10,9.5
-YRng=45,-30
+YRng=24,-16
 Options=LINEARX,LINEARY
 Range Grid X=0.1
-Range Grid Y=15
+Range Grid Y=8
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
@@ -3928,10 +3933,10 @@ AliasID=3
 XExp=T
 YExp=V(VEE)
 XRng=10,9.5
-YRng=45,-30
+YRng=24,-16
 Options=LINEARX,LINEARY
 Range Grid X=0.1
-Range Grid Y=15
+Range Grid Y=8
 Enable=Enable
 Line Color=#FF00FF
 Text Color=#FF00FF
@@ -4107,7 +4112,7 @@ PlaceText=True
 
 [Pane]
 Analysis=Transient
-CurrentPage 0="MAIN"
+CurrentPage 0="2"
 
 [Pane]
 Analysis=AC
