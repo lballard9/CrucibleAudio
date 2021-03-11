@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.4
 Key ID=Demo
-NLCnt=278
+NLCnt=273
 TXCnt=15
 
 [shapedef]
@@ -309,20 +309,6 @@ Pin="Cathode",0,0,-20,-8
 Power=0.4
 
 [compdef]
-Name=TIP31A
-Definition=NPN
-Shape=NPN
-Mask=4224
-Used=2
-memo=NPN Power Transistor Vceo=60V Ic=3A Pd=40W
-Label Offset=37,-17,-14,33
-PinCnt=3
-Pin="Collector",3,-3,4,14
-Pin="Base",0,0,-18,-3
-Pin="Emitter",3,3,5,1
-Power=40
-
-[compdef]
 Name=TIP32C
 Definition=PNP
 Shape=PNP
@@ -337,6 +323,20 @@ Pin="Emitter",3,-3,6,15
 Power=40
 
 [compdef]
+Name=TIP31A
+Definition=NPN
+Shape=NPN
+Mask=4224
+Used=2
+memo=NPN Power Transistor Vceo=60V Ic=3A Pd=40W
+Label Offset=37,-17,-14,33
+PinCnt=3
+Pin="Collector",3,-3,4,14
+Pin="Base",0,0,-18,-3
+Pin="Emitter",3,3,5,1
+Power=40
+
+[compdef]
 Name=Inductor
 Definition=Inductor
 Shape=Inductor
@@ -347,6 +347,20 @@ Label Offset=18,9,11,12
 PinCnt=2
 Pin="Plus",6,0,-5,-9
 Pin="Minus",0,0,-3,-9
+
+[compdef]
+Name=TIP31C
+Definition=NPN
+Shape=NPN
+Mask=4224
+Used=1
+memo=NPN Power Transistor Vceo=100V Ic=3A Pd=40W
+Label Offset=29,-11,-6,26
+PinCnt=3
+Pin="Collector",3,-3,5,3
+Pin="Base",0,0,-19,-3
+Pin="Emitter",3,3,6,4
+Power=40
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 0,52,1411,483
@@ -1007,7 +1021,7 @@ Pxs=696,360,696,704
 Pxs=1232,472,1232,704
 
 [Wire]
-Pxs=1312,472,1368,472
+Pxs=1232,472,1384,472
 
 [Comp]
 Name=Voltage Source
@@ -1518,28 +1532,6 @@ V=0.4
 [Attr]
 ON=-68,-82,PACKAGE
 V=SOD-123
-
-[Comp]
-Name=TIP31A
-Px=1120,384
-
-[Attr]
-ON=37,-17,PART
-V=Q6
-Style=8192
-
-[Attr]
-ON=37,-3,MODEL
-V=TIP31A
-Style=8192
-
-[Attr]
-ON=37,11,POWER
-V=40
-
-[Attr]
-ON=37,39,PACKAGE
-V=TO-220AB
 
 [Comp]
 Name=TIP32C
@@ -2636,57 +2628,8 @@ V
 Pxs=40,240,40,248
 Page=1
 
-[Comp]
-Name=Capacitor
-Px=1368,472
-Rot=1
-
-[Attr]
-ON=12,12,PART
-V=C7
-Style=8192
-
-[Attr]
-ON=12,26,CAPACITANCE
-V=10n
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Ground
-Px=1368,520
-Rot=7
-
-[Comp]
-Name=Inductor
-Px=1264,472
-Rot=4
-
-[Attr]
-ON=18,-23,PART
-V=L1
-Style=8192
-
-[Attr]
-ON=18,-37,INDUCTANCE
-V=3.3u
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
 [Wire]
 Pxs=696,704,1024,704
-
-[Wire]
-Pxs=1368,472,1384,472
-
-[Wire]
-Pxs=1232,472,1264,472
 
 [Comp]
 Name=Inductor
@@ -2736,6 +2679,28 @@ Pxs=1024,704,1040,704
 Name=Ground
 Px=1024,752
 Rot=7
+
+[Comp]
+Name=TIP31C
+Px=1120,384
+
+[Attr]
+ON=29,-11,PART
+V=Q6
+Style=8192
+
+[Attr]
+ON=29,3,MODEL
+V=TIP31C
+Style=8192
+
+[Attr]
+ON=29,17,POWER
+V=40
+
+[Attr]
+ON=29,45,PACKAGE
+V=TO-220AB
 
 [Grid Text]
 Text=".define Ltrace 2n"
@@ -2872,7 +2837,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1
+Scale=1.3333333333333333
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -3060,9 +3025,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=139,324
-Scale 3=1
-Px=693,752
+SB 3=67,48
+Scale 3=1.3333333333333333
+Px=1340,420
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -4007,7 +3972,7 @@ NOFmtY=3E
 
 [Limits]
 Analysis=AC
-FRange=30k,1
+FRange=6G,1
 NPts=1001
 Temp=27
 MaxChng=5
@@ -4029,11 +3994,11 @@ Plt=1
 AliasID=1
 XExp=F
 YExp=dB(v(Vout)/V(Vin))
-XRng=30000,1
-YRng=200,-50
+XRng=6e+9,1
+YRng=600,-150
 Options=LINEARY
-Range Grid X=5999.8
-Range Grid Y=50
+Range Grid X=1.2e+9
+Range Grid Y=150
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -4055,11 +4020,11 @@ Plt=1
 AliasID=3
 XExp=F
 YExp=ph(v(Vout)/V(Vin))
-XRng=30000,1
-YRng=200,-50
+XRng=6e+9,1
+YRng=600,-150
 Options=LINEARY
-Range Grid X=5999.8
-Range Grid Y=50
+Range Grid X=1.2e+9
+Range Grid Y=150
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
