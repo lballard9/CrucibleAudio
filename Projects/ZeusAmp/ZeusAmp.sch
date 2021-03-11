@@ -110,17 +110,6 @@ Wire Wire Line
 	3300 2275 3300 2250
 Wire Wire Line
 	3300 2250 3700 2250
-$Comp
-L Device:CP Cin1
-U 1 1 604A684C
-P 2825 2250
-F 0 "Cin1" V 3080 2250 50  0000 C CNN
-F 1 "20u" V 2989 2250 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2863 2100 50  0001 C CNN
-F 3 "~" H 2825 2250 50  0001 C CNN
-	1    2825 2250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2975 2250 3300 2250
 Connection ~ 3300 2250
@@ -166,17 +155,6 @@ F 1 "1k" H 5920 2430 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 2475 50  0001 C CNN
 F 3 "~" H 5850 2475 50  0001 C CNN
 	1    5850 2475
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP CF1
-U 1 1 604B23DC
-P 5850 2875
-F 0 "CF1" V 6105 2875 50  0000 C CNN
-F 1 "20u" V 6014 2875 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5888 2725 50  0001 C CNN
-F 3 "~" H 5850 2875 50  0001 C CNN
-	1    5850 2875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -601,10 +579,6 @@ F 3 "~" H 12825 5025 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 3625 1425 3625
-Wire Wire Line
-	1750 2250 1750 3625
-Wire Wire Line
 	1750 2250 2675 2250
 $Comp
 L Device:Q_PNP_BCE Q11
@@ -703,17 +677,6 @@ Wire Wire Line
 	3300 6700 3300 6675
 Wire Wire Line
 	3300 6675 3700 6675
-$Comp
-L Device:CP Cin11
-U 1 1 60594D59
-P 2825 6675
-F 0 "Cin11" V 3080 6675 50  0000 C CNN
-F 1 "20u" V 2989 6675 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2863 6525 50  0001 C CNN
-F 3 "~" H 2825 6675 50  0001 C CNN
-	1    2825 6675
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2975 6675 3300 6675
 Connection ~ 3300 6675
@@ -748,32 +711,6 @@ F 3 "~" H 5850 6900 50  0001 C CNN
 	1    5850 6900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP CF11
-U 1 1 60594D72
-P 5850 7300
-F 0 "CF11" V 6105 7300 50  0000 C CNN
-F 1 "20u" V 6014 7300 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5888 7150 50  0001 C CNN
-F 3 "~" H 5850 7300 50  0001 C CNN
-	1    5850 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 7050 5850 7150
-$Comp
-L power:GND #PWR0107
-U 1 1 60594D79
-P 5850 7475
-F 0 "#PWR0107" H 5850 7225 50  0001 C CNN
-F 1 "GND" H 5855 7302 50  0000 C CNN
-F 2 "" H 5850 7475 50  0001 C CNN
-F 3 "" H 5850 7475 50  0001 C CNN
-	1    5850 7475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 7475 5850 7450
 Wire Wire Line
 	5500 6675 5850 6675
 Wire Wire Line
@@ -1161,8 +1098,6 @@ Connection ~ 10600 7400
 Text Label 11750 5025 0    50   ~ 0
 RightAudioChannel
 Wire Wire Line
-	1425 3825 1750 3825
-Wire Wire Line
 	1750 3825 1750 6675
 $Comp
 L power:GND #PWR0110
@@ -1186,4 +1121,163 @@ F 3 "" H 1425 3425 50  0001 C CNN
 	1    1425 3425
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:C Cin1
+U 1 1 604ADA3C
+P 2825 2000
+F 0 "Cin1" V 3077 2000 50  0000 C CNN
+F 1 "10u" V 2986 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2863 1850 50  0001 C CNN
+F 3 "~" H 2825 2000 50  0001 C CNN
+	1    2825 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C Cin2
+U 1 1 604B6691
+P 2825 2525
+F 0 "Cin2" V 3077 2525 50  0000 C CNN
+F 1 "10u" V 2986 2525 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2863 2375 50  0001 C CNN
+F 3 "~" H 2825 2525 50  0001 C CNN
+	1    2825 2525
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2675 2000 2675 2250
+Connection ~ 2675 2250
+Wire Wire Line
+	2675 2250 2675 2525
+Wire Wire Line
+	2975 2000 2975 2250
+Connection ~ 2975 2250
+Wire Wire Line
+	2975 2250 2975 2525
+$Comp
+L Device:C CFB2
+U 1 1 604C74BB
+P 6200 2875
+F 0 "CFB2" V 6452 2875 50  0000 C CNN
+F 1 "10u" V 6361 2875 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 2725 50  0001 C CNN
+F 3 "~" H 6200 2875 50  0001 C CNN
+	1    6200 2875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C CFB1
+U 1 1 604D03D1
+P 5600 2875
+F 0 "CFB1" V 5852 2875 50  0000 C CNN
+F 1 "10u" V 5761 2875 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5638 2725 50  0001 C CNN
+F 3 "~" H 5600 2875 50  0001 C CNN
+	1    5600 2875
+	-1   0    0    1   
+$EndComp
+Connection ~ 5850 3025
+Wire Wire Line
+	5850 3025 5600 3025
+Wire Wire Line
+	6200 3025 5850 3025
+Wire Wire Line
+	5600 2725 5850 2725
+Connection ~ 5850 2725
+Wire Wire Line
+	5850 2725 6200 2725
+$Comp
+L Device:C Cin3
+U 1 1 604FD973
+P 2825 6400
+F 0 "Cin3" V 3077 6400 50  0000 C CNN
+F 1 "10u" V 2986 6400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2863 6250 50  0001 C CNN
+F 3 "~" H 2825 6400 50  0001 C CNN
+	1    2825 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C Cin4
+U 1 1 604FE61D
+P 2825 6975
+F 0 "Cin4" V 3077 6975 50  0000 C CNN
+F 1 "10u" V 2986 6975 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2863 6825 50  0001 C CNN
+F 3 "~" H 2825 6975 50  0001 C CNN
+	1    2825 6975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2675 6400 2675 6675
+Connection ~ 2675 6675
+Wire Wire Line
+	2675 6675 2675 6975
+Wire Wire Line
+	2975 6975 2975 6675
+Connection ~ 2975 6675
+Wire Wire Line
+	2975 6675 2975 6400
+$Comp
+L power:GND #PWR0107
+U 1 1 60517FE1
+P 5850 7575
+F 0 "#PWR0107" H 5850 7325 50  0001 C CNN
+F 1 "GND" H 5855 7402 50  0000 C CNN
+F 2 "" H 5850 7575 50  0001 C CNN
+F 3 "" H 5850 7575 50  0001 C CNN
+	1    5850 7575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7575 5850 7550
+$Comp
+L Device:C CFB4
+U 1 1 60517FE8
+P 6200 7400
+F 0 "CFB4" V 6452 7400 50  0000 C CNN
+F 1 "10u" V 6361 7400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6238 7250 50  0001 C CNN
+F 3 "~" H 6200 7400 50  0001 C CNN
+	1    6200 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C CFB3
+U 1 1 60517FEE
+P 5600 7400
+F 0 "CFB3" V 5852 7400 50  0000 C CNN
+F 1 "10u" V 5761 7400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5638 7250 50  0001 C CNN
+F 3 "~" H 5600 7400 50  0001 C CNN
+	1    5600 7400
+	-1   0    0    1   
+$EndComp
+Connection ~ 5850 7550
+Wire Wire Line
+	5850 7550 5600 7550
+Wire Wire Line
+	6200 7550 5850 7550
+Wire Wire Line
+	5600 7250 5850 7250
+Connection ~ 5850 7250
+Wire Wire Line
+	5850 7250 6200 7250
+Wire Wire Line
+	5850 7050 5850 7250
+Text Label 4125 1975 0    50   ~ 0
+CollectorInput
+Wire Wire Line
+	1750 3825 1625 3825
+Wire Wire Line
+	1625 3825 1625 3625
+Wire Wire Line
+	1625 3625 1425 3625
+Wire Wire Line
+	1750 3725 1550 3725
+Wire Wire Line
+	1550 3725 1550 3825
+Wire Wire Line
+	1550 3825 1425 3825
+Wire Wire Line
+	1750 2250 1750 3725
 $EndSCHEMATC

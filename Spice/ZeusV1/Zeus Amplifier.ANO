@@ -3,7 +3,7 @@
 ***                                                                          ***
 ***                                                                          ***
 ***                      AC Analysis of Zeus Amplifier                       ***
-***                          3/10/2021 11:53:13 PM                           ***
+***                          3/11/2021 12:43:20 PM                           ***
 ********************************************************************************
 Limits
 ======
@@ -350,8 +350,8 @@ ic                    0.000
 
 Operating Point for Devices of Type Capacitor
 =============================================
-Instance:                CIN            CF1             CC             C8
-V                    -1.221m        -1.101m        13.753          9.934m
+Instance:                CF1             CC             C8             C9
+V                    -1.101m        13.753          9.934m        -1.221m
 Power DC Terms:
 PS                    0.000          0.000          0.000          0.000 
 
@@ -360,6 +360,18 @@ Ic                    0.000          0.000          0.000          0.000
 
 Device Variables:
 ic                    0.000          0.000          0.000          0.000 
+
+
+Instance:                C10
+V                    -1.221m
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
 
 
 
